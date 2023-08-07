@@ -14,3 +14,10 @@ const savedMode = localStorage.getItem("dark-mode");
 if (savedMode === "true") {
   body.classList.add("dark-mode");
 }
+
+function display(val) {
+  var upperDiv = document.getElementById("upper");
+  upperDiv.textContent = upperDiv.textContent + val;
+
+  return val;
+}
