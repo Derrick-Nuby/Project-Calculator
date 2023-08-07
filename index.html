@@ -20,15 +20,12 @@
     <!-- <button id="mode-toggle" >Toggle Mode</button> -->
 
     <div class="calculator">
-        <div class="screen">
-            <div class="upper" id="upper">0</div>
-
-            <div class="lower">0</div>
+        <div class="answers_screen">
+            <input type='text' id='result' class='screen'>
         </div>
-
         <div class="buttons">
-            <input type="button" value="AC" class="button" onClick="display('7')"></input>
-            <input type="button" value="Del" class="button" onClick="display('7')"></input>
+            <input type="button" value="AC" class="button clear" onclick="clearScreen()"></input>
+            <input type="button" value="Del" class="button"></input>
             <input type="button" value="/" class="operator" onClick="display('/')"></input>
             <input type="button" value="*" class="operator" onClick="display('*')"></input>
             <input type="button" value="7" class="button" onClick="display('7')"></input>
@@ -42,7 +39,7 @@
             <input type="button" value="1" class="button" onClick="display('1')"></input>
             <input type="button" value="2" class="button" onClick="display('2')"></input>
             <input type="button" value="3" class="button" onClick="display('3')"></input>
-            <input type="button" value="=" class="button equal-sign" onClick="solve()"></input>
+            <input type="button" value="=" class="button equal-sign" onClick="calculate()"></input>
             <input type="button" value="0" class="button" onClick="display('0')"></input>
             <input type="button" value="+/-" class="button" onClick="display('---')"></input>
             <input type="button" value="." class="button" onClick="display('.')"></input>
@@ -50,4 +47,6 @@
     </div>
 </body>
 <script src="./app.js"></script>
+<script src="./dark.js"></script>
+
 </html>
