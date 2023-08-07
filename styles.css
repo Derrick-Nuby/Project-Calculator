@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --prcolor: #f1faee;
+    --fircolor: #003049;
+    --secolor: #f77f00;
+    --thcolor: #FFF5EB; 
+    --scrncolor: #6b705c;
+    /* #FFD8AD */
+}
+
+body {
+    /* font-family: 'Rajdhani', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: var(--prcolor);
+    color: #000000;
+}
+
+body.dark-mode {
+    background-color: var(--fircolor);
+    color: #ffffff;
+}
