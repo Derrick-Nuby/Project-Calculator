@@ -35,19 +35,21 @@ h1 {
 }
 
 #mode-toggle {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+    padding: 7px 10px;
+    font-weight: bold;
+    border-radius: 20px;
     background-color: var(--btcolor);
     position: fixed;
     top: 6%;
     right: 40px;
     cursor: pointer;
+    font-size: 12px;
 }
 
 #mode-toggle:hover {
-    height: 53px;
-    width: 53px;
+    padding: 8px 11px;
+    font-weight: bold;
+    border-radius: 20px;
     transition: 300ms;
 }
 
@@ -57,19 +59,40 @@ h1 {
     font-weight: 600;
     width: 400px;
     background-color: var(--calbgcolor);
-    padding: 10px;
+    padding: 20px;
     line-height: 40px;
     margin: 0 auto;
     border-radius: 5px;
     margin-bottom: 100px;
 }
 
-.screen {
+
+input {
     background-color: var(--scrncolor);
-    border-radius: 5px;
-    padding: 10px 30px;
-    margin-bottom: 15px;
+    padding: 0px 5px 0px 5px;
+    text-align: right;
+    margin: 0 auto;
+    width: 390px;
+    font-size: 38px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 800;
+    border: none;
 }
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+input:nth-child(1) {
+    border-radius: 5px 5px 0px 0px;
+}
+
+input:nth-child(2) {
+    border-radius: 0px 0px 5px 5px;
+    margin-bottom: 25px;
+}
+
 
 .upper, .lower {
     text-align: right;
@@ -82,15 +105,17 @@ h1 {
     border-radius: 5px;
     font-weight: 900;
     color: var(--txtcolor);
-    cursor: pointer;
 }
+
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 80px);
     grid-template-rows: repeat(5, 80px);
     grid-gap: 20px;
-    padding: 10px;
+    /* padding: 10px; */
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .grid-item-16 {
@@ -100,4 +125,37 @@ h1 {
 
 .grid-item-19 {
     padding-top: 15px;
+}
+
+#equal {
+    background-color: #ff0000c0;
+    box-shadow: 3px 3px 3px 1px #2c0000;
+}
+
+#divide, #times, #minus, #plus, #negation, #clear,
+#delete, #dot {
+    background-color: #f77f00;
+    box-shadow: 3px 3px 3px 1px #3D2000;
+}
+
+#divide:hover,
+#times:hover,
+#minus:hover,
+#plus:hover,
+#negation:hover,
+#clear:hover,
+#delete:hover,
+#dot:hover,
+#equal:hover {
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.number {
+    box-shadow: 3px 3px 3px 1px #404c52;
+}
+
+.number:hover {
+    cursor: pointer;
+    box-shadow: none;
 }
