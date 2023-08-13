@@ -1,16 +1,23 @@
 const one = document.getElementById("one");
 const operations = document.getElementById("operations");
 const answer = document.getElementById("answer");
+const operand1 = [];
+let result;
 
 function allocate(number) {
   display(number);
-  calculate(number);
+  operands(number);
 }
 
 function display(number) {
   operations.value += number;
 }
 
+function operands(number) {
+  operand1.push(number);
+  result = Number(operand1.join(""));
+  console.log(result);
+}
 function clearAll() {
   operations.value = "";
   answer.value = "";
