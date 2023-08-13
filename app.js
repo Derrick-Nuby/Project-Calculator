@@ -29,6 +29,8 @@ function operate(operator) {
     display(operator);
   } else if (operator === "*") {
     display(operator);
+  } else if (operator === "/") {
+    display(operator);
   }
 }
 
