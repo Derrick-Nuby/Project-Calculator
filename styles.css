@@ -93,11 +93,6 @@ input:nth-child(2) {
     margin-bottom: 25px;
 }
 
-
-.upper, .lower {
-    text-align: right;
-}
-
 .grid-item {
     background-color: #fff;
     text-align: center;
@@ -118,12 +113,12 @@ input:nth-child(2) {
     margin-bottom: 20px;
 }
 
-.grid-item-16 {
+#equal {
     grid-row: span 2;
     padding-top: 80px;
 }
 
-.grid-item-19 {
+#dot {
     padding-top: 15px;
 }
 
