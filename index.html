@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/9e43b5fe15.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator + - / * The-Odin-Project Javascript Calculator</title>
+    <title>Calculator + - / * Fully Fledged Calculator</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -20,30 +20,30 @@
 
     <div class="calculator">
         <div class="screen">
-            <input type="text" id="upper">
-            <input type="text" id="lower">
+            <input type="text" id="operations" maxlength="20">
+            <input type="text" id="answer" maxlength="20">
         </div>
 
         <div class="buttons">
-            <div id="clear" class="grid-item grid-item-1 acbtn">AC</div>
-            <div id="delete" class="grid-item grid-item-2 delbtn">Del</div>
-            <div id="divide" class="grid-item grid-item-3 operator">/</div>
-            <div id="times" class="grid-item grid-item-4 operator">X</div>
-            <div id="seven" class="grid-item grid-item-5 number">7</div>
-            <div id="eight" class="grid-item grid-item-6 number">8</div>
-            <div id="nine" class="grid-item grid-item-7 number">9</div>
-            <div id="minus" class="grid-item grid-item-8 operator">-</div>
-            <div id="four" class="grid-item grid-item-9 number">4</div>
-            <div id="five" class="grid-item grid-item-10 number">5</div>
-            <div id="six" class="grid-item grid-item-11 number">6</div>
-            <div id="plus" class="grid-item grid-item-12 ">+</div>
-            <div id="one" class="grid-item grid-item-13 number">1</div>
-            <div id="two" class="grid-item grid-item-14 number">2</div>
-            <div id="three" class="grid-item grid-item-15 number">3</div>
-            <div id="equal" class="grid-item grid-item-16">=</div>
-            <div id="zero" class="grid-item grid-item-17 number">0</div>
-            <div id="negation" class="grid-item grid-item-18 operator">+/-</div>
-            <div id="dot" class="grid-item grid-item-19">.</div>
+            <div onclick="clearAll()" id="clear" class="grid-item acbtn">AC</div>
+            <div onclick="deleteLast()" id="delete" class="grid-item delbtn">Del</div>
+            <div onclick="operate('/')" id="divide" class="grid-item operator">/</div>
+            <div onclick="operate('*')" id="times" class="grid-item operator">*</div>
+            <div onclick="allocate(7)" id="seven" class="grid-item number">7</div>
+            <div onclick="allocate(8)" id="eight" class="grid-item number">8</div>
+            <div onclick="allocate(9)" id="nine" class="grid-item number">9</div>
+            <div onclick="operate('-')" id="minus" class="grid-item operator">-</div>
+            <div onclick="allocate(4)" id="four" class="grid-item number">4</div>
+            <div onclick="allocate(5)" id="five" class="grid-item number">5</div>
+            <div onclick="allocate(6)" id="six" class="grid-item number">6</div>
+            <div onclick="operate('+')" id="plus" class="grid-item ">+</div>
+            <div onclick="allocate(1)" id="one" class="grid-item number">1</div>
+            <div onclick="allocate(2)" id="two" class="grid-item number">2</div>
+            <div onclick="allocate(3)" id="three" class="grid-item number">3</div>
+            <div onclick="calculate()" id="equal" class="grid-item">=</div>
+            <div onclick="allocate(0)" id="zero" class="grid-item number">0</div>
+            <div onclick="allocate()" id="negation" class="grid-item operator">+/-</div>
+            <div onclick="allocate()" id="dot" class="grid-item">.</div>
         </div>
     </div>
 </body>
